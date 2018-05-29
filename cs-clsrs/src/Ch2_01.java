@@ -1,5 +1,5 @@
 //Insertion sort
-public class Ch1_01 {
+public class Ch2_01 {
 	public static void main(String args[]) {
 		int[] inputArray = {4,1,6,8,2,3,10};
 		printArray(insertionSort(inputArray));
@@ -14,7 +14,7 @@ public class Ch1_01 {
 			int j=i-1;
 			while(j>=0 && inputArray[j]>selectedNumber) {
 				inputArray[j+1] = inputArray[j];
-				j=j-1;
+				j--;
 			}
 			inputArray[j+1] = selectedNumber;
 		}
